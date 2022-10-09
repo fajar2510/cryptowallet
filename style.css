@@ -1,0 +1,297 @@
+h1 {
+    
+width: 584px;
+height: 228px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 76px;
+/* or 119% */
+
+
+color: #0A0B0D;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(82.94deg, #F0F2FB 50.57%, #FEFEFF 77.18%);
+}
+
+.header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 120px;
+    border-bottom: 2px solid #E1E3EF;
+
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu .image-logo {
+width: 40px;
+
+}
+
+.header-menu .image-logo-text {
+width: 163px;
+padding-right: 33px;
+padding-left: 5px;
+border-right: 2px solid #E1E3EF;
+}
+
+.nav-list {
+    display: inline;
+    margin-left: 33px;
+    
+}
+.nav-list a {
+font-weight: 600;
+text-decoration: none;
+color: #0B0C0E;
+}
+
+.btn {
+    padding: 11px 32px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #004EFF;
+    border: none;
+    color: white;
+   
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #E1E3EF;
+    color: black;
+    
+}
+
+.btn-block {
+    width: 100%;
+    display: block;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 120px;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: #5B616E;
+    margin: 24px 0 35px;
+}
+
+.info {
+    padding: 12px 120px;
+
+}
+
+.info-card{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 40px 55px;
+    display: flex;
+    box-shadow: 8px 40px 40px rgba(63, 70, 77, 0.02);
+}
+
+.info-list {
+    flex: 1;
+}
+
+.info-list img {
+    margin-bottom: 24px;
+}
+
+.info-list h4 {
+    font-size: 32px;
+    margin: 4px 0;
+}
+
+.info-list .text-header {
+    color: rgba(10, 11, 13, 0.48);;
+}
+
+.info-list .text-desc {
+    color: #58BD7D;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 11, 13, 0.4);
+    position: fixed;
+    top: 0;
+    display: none;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    width: 30%;
+    margin: auto;
+    border-radius: 12px;
+    border: 2px solid #E1E3EF;
+}
+
+.modal-close {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #E1E3EF;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+.icon-close {
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #23252F;
+}
+
+.modal-content h4{
+    font-size: 24px;
+}
+
+.modal-desc {
+    margin: 10px 0;
+    color: #5b616e;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.form-input {
+    margin: 10px 0;
+}
+
+.modal-content form {
+    margin: 10px 0;
+}
+
+.form-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.form-input input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 2px solid #E1E3EF;
+
+}
+
+.modal-footer {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #5b616e;
+}
+
+@media ( max-width: 576px) {
+    .header, .hero, .info {
+        padding: 12px 30px;
+    }
+
+    .header-menu .image-logo-text {
+        display: none;
+    }
+    .btn {
+        padding: 8px 22px;
+        font-size: 12px;
+    }
+    .btn-secondary {
+        display: none;
+    }
+    
+    
+    .nav-list {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    .hero-image {
+        display: none;
+    }
+    .hero-text {
+        text-align: center;
+    }
+    .hero-text h1 {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    .hero-text p {
+        font-size: 13px;
+        margin: 20px 0;
+    }
+
+    .info-card {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .info-list img {
+        margin-bottom: 5px;
+
+    }
+    .info-list h4{
+        font-size: 20px;
+    }
+
+    .info-list .text-header , .text-header {
+        font-size: 13px;
+    }
+    .info-list {
+        margin: 10px 0;
+    }
+
+    .modal-content {
+        width: 80%;
+
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/icon.svg">
+    <title>Crypto Wallet</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header" >
+        <div class="header-menu">
+            <img class="image-logo" src="/assets/logo.png" alt="logo image">
+            <img class="image-logo-text" src="/assets/logo-text.png" alt="logo text">
+            <ul>
+                <li class="nav-list" > <a href="">Exchange</a> </li>
+                <li class="nav-list"> <a href="">Market</a> </li>
+            </ul>
+        </div>
+        <div class="header-action" >
+            <button class="btn btn-secondary" >Masuk</button>
+            <button class="btn btn-primary" id="btnRegister">Daftar</button>
+        </div>
+    </div>
+    <!-- End Header -->
+    <!-- Hero -->
+    <div class="hero" >
+        <div class="hero-text">
+            <h1>Jual Beli <br> Crypto dalam <br> hitungan menit</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ratione recusandae expedita voluptates incidunt. Nesciunt, ipsam repudiandae! Excepturi quo fugiat vel, odio officiis amet tenetur magnam soluta ipsum cumque aspernatur?</p>
+            <button class="btn btn-primary">Lihat Market Trend</button>
+        </div>
+        <div class="hero-image">
+            <img src="/assets/hero.png" alt="hero image">
+        </div>
+    </div>
+    <!-- End Hero -->
+    <!-- Info -->
+    <div class="info">
+        <div class="info-card">
+            <div class="info-list">
+                <img src="/assets/icon1.png" alt="icon1 image">
+                <div class="text-header">Bitcoin/BTC</div>
+                <h4 >$51,354.52</h4>
+                <div class="text-desc">+0.55%</div>
+            </div>
+            <div class="info-list">
+                <img src="/assets/icon2.png" alt="icon1 image">
+                <div class="text-header">Etherium/ETH</div>
+                <h4>$4,343.52</h4>
+                <div class="text-desc">+0.55%</div>
+            </div>
+            <div class="info-list">
+                <img src="/assets/icon3.png" alt="icon1 image">
+                <div class="text-header">Binance Coin/BNB</div>
+                <h4>$532.52</h4>
+                <div class="text-desc">+0.55%</div>
+            </div>
+            <div class="info-list">
+                <img src="/assets/icon4.png" alt="icon1 image">
+                <div class="text-header">Theher/USDT</div>
+                <h4>$1.12</h4>
+                <div class="text-desc">+0.55%</div>
+            </div>
+        </div>
+    </div>
+    <!-- End Info -->
+    <!-- Modal -->
+    <div class="modal" id="modalRegister">
+        <div class="modal-content">
+            <div class="modal-close">
+                <span class="icon-close">&times;</span>
+            </div>
+            <h4>Daftar ke Crypto Wallet</h4>
+           <div class="modal-desc">
+            Sudah punya akun ? <a href="#" alt="masuk">Masuk disini</a>
+           </div>
+           <form action="#">
+            <div class="form-input">
+                <label for="">Email</label>
+                <input type="email" placeholder="Masukkan Email">
+            </div>
+            <div class="form-input">
+                <label for="">Kata Sandi</label>
+                <input type="password" placeholder="Masukkan kata sandi">
+            </div>
+            <div class="form-input">
+                <label for="">Ulangi Kata Sandi</label>
+                <input type="password" placeholder="Ulangi kata sandi">
+            </div>
+            <button class="btn btn-primary btn-block">Daftar</button>
+           </form>
+           <div class="modal-footer">
+            Dengan klik mendaftar saya menyetujui <a href="#"> Syarat dan Ketentuan</a>
+            serta <a href="#">Kebijakan Privasi</a> &copy;Cryptowallet
+           </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <script>
+        var btnRegister = document.getElementById
+        ("btnRegister");
+        var modalRegister =  document.getElementById
+        ("modalRegister")
+        var btnCloseModal = document.getElementsByClassName
+        ("icon-close")[0]
+
+        btnRegister.onclick = function () {
+            // console.log("Button Registered")
+            modalRegister.style.display = "flex"
+        };
+        
+        btnCloseModal.onclick = function() {
+            modalRegister.style.display = "none"
+        };
+
+        window.onclick = function() {
+            console.log("window is closed")
+            if (event.target == modalRegister) {
+                modalRegister.style.display = "none"
+            }
+        }
+    </script>
+    <br>
+    <br>
+</body>
+</html>
